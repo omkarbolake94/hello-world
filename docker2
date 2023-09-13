@@ -1,0 +1,25 @@
+pipeline 
+{
+
+agent 
+{
+docker {image 'centos:6.6'}
+}
+
+stages
+
+  {
+  stage ('Test'){
+  
+             steps {
+			 sh 'cat /etc/os-release >> /home/root/build1.txt'
+			 sh ' df -h >> /home/root/build1.txt'
+			 
+			 }
+			 
+  
+        }
+  
+  }
+
+}
