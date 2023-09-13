@@ -1,0 +1,15 @@
+pipeline{
+          agent {
+		  
+		       docker {image 'redhat/ubi9'}
+			   }
+			   stages{
+			   stage('Test'){
+			   
+			   step{
+			   sh 'cat /etc/os-release'
+			   }
+			   
+			   }
+			   }
+}
