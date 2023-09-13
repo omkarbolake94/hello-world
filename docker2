@@ -13,6 +13,7 @@ stages
                          sh 'cat /etc/os-release >> build1.txt'
 			 sh ' df -h >> build1.txt'
 			 sh 'cat build1.txt'
+                         sh 'pwd'
 			 }
 			 
   
