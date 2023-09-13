@@ -12,10 +12,10 @@ stages
   stage ('Test'){
   
              steps {
-			 sh 'touch /home/root/build1.txt'
-                         sh 'cat /etc/os-release >> /home/root/build1.txt'
-			 sh ' df -h >> /home/root/build1.txt'
-			 
+			 sh 'touch build1.txt'
+                         sh 'cat /etc/os-release >> build1.txt'
+			 sh ' df -h >> build1.txt'
+			 sh 'cat build1.txt'
 			 }
 			 
   
