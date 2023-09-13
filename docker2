@@ -3,7 +3,7 @@ pipeline
 
 agent 
 {
-docker {image 'centos:6.6'}
+docker {image 'centos'}
 }
 
 stages
